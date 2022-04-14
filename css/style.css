@@ -1,5 +1,6 @@
 :root {
     --color-primary: #333;
+    --color-primary-dark: #ccc;
 }
 * {
     margin: 0px;
@@ -15,6 +16,7 @@ body {
 }
 .header {
     text-align: center;
+    background-color: aliceblue;
     box-shadow: 0px -2px 9px 0px  var(--color-primary);
 }
 .logo {
@@ -31,4 +33,129 @@ body {
 .navigation a {
     color: var(--color-primary);
     text-decoration: none;
+}
+.container {
+    display: flex;
+}
+.container aside {
+    width: 20%;
+    max-width: 300px;
+    border-right: solid 1px var(--color-primary);
+}
+.container main {
+    width: 80%;
+    padding: 16px;
+}
+.aside img{
+    width: 20px;
+}
+.aside li {
+    padding-left: 10px;
+    border-bottom: solid 1px var(--color-primary);
+    display: flex;
+    align-items: center;
+    transition: all .2s linear;
+}
+.hover-efect li:hover {
+    cursor: pointer;
+    background-color: rgba(158, 158, 158, 0.283);
+    transition: all .2s linear;
+}
+
+.aside li  a{
+    color: var(--color-primary);
+    padding: 15px 10px 10px 10px;
+    margin-left: 10px;
+    text-decoration: none;
+}
+.text-center {
+    text-align: center;
+}
+.title {
+    max-width: 500px;
+    margin: 0px auto;
+}
+.content-input {
+    max-width: 500px;
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-between;
+}
+.content-input input {
+    width: 400px;
+    border: solid 1px var(--color-primary);
+    padding: 10px;
+    border-radius: 3px;
+}
+.content-input button {
+    margin-left: 10px;
+    padding: 0px 15px;
+    background-color: #41c8f4;
+    border: solid 1px rgb(3, 209, 209);
+    border-radius: 3px;
+
+}
+.container-task {
+    max-width: 500px;
+    margin: 30px auto;
+    border:solid 1px var(--color-primary);
+}
+.container-task h3 {
+    padding: 15px;
+    background-color: #41c8f4;
+    color: var(--color-primary);
+    border-bottom: solid 1px var(--color-primary);
+}
+.container-task ul {
+    border-radius: 3px;
+}
+.container-task ul li {
+    padding: 10px;
+    border-bottom: solid 1px var(--color-primary);
+}
+.container-task ul li:last-child {
+    border-bottom: none;
+}
+/*****************/
+/***Dark Mode*****/
+/*****************/
+.dark {
+    color: var(--color-primary-dark);
+}
+.dark .header {
+    background-color: var(--color-primary);
+    box-shadow: none;
+    border-bottom: solid 1px var(--color-primary-dark);
+}
+.dark .container {
+    background-color: var(--color-primary);
+}
+.dark .navigation a {
+    color: var(--color-primary-dark);
+}
+.dark .aside li  a{
+    color: var(--color-primary-dark);
+}
+.dark .container aside {
+    border-right: solid 1px var(--color-primary-dark);
+}
+.dark .aside li {
+    border-bottom: solid 1px var(--color-primary-dark);
+}
+
+
+.dark .content-input input {
+    border: solid 1px var(--color-primary-dark);
+}
+
+.dark .container-task ul li {
+    border-bottom: solid 1px var(--color-primary-dark);
+}
+
+.dark .container-task {
+    border:solid 1px var(--color-primary-dark);
+}
+.dark .content-input button {
+    color: white;
+    font-weight: 700;
 }
