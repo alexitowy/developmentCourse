@@ -3,7 +3,7 @@
     --color-primary: #333;
     --color-primary-dark: #ccc;
 }
-html {
+html,body {
     height: 100%;
 }
 * {
@@ -17,7 +17,6 @@ ul {
 }
 body {
     background-color: white;
-    height: 100vh;
 }
 .header {
     text-align: center;
@@ -99,7 +98,6 @@ body {
     border: solid 1px rgb(3, 209, 209);
     border-radius: 3px;
     font-size: 2rem;
-
 }
 .container-task {
     max-width: 500px;
@@ -122,6 +120,10 @@ body {
 .container-task ul li:last-child {
     border-bottom: none;
 }
+.menuHamburguer {
+    display: none;
+}
+
 /*****************/
 /***Animations****/
 /*****************/
@@ -162,8 +164,58 @@ body {
     90% {  
         transform: translate3d(0,-4px,0);
     }
-} 
+}
+/*****************/
+/***Media QuErY*****/
+/*****************/
 
+@media (max-width: 668px) {
+   .container aside {
+        display: none;
+    }
+    .container main {
+        width: 100%;
+    }
+    .content-input {
+        width: 100%;
+        margin: 10px auto;
+        flex-direction: column;
+    }
+    .content-input input {
+        width: 100%;
+    }
+    .content-input button {
+        padding: 0px;
+        margin: 0px;
+        margin-top: 10px;
+    }
+    .navigation {
+        flex-direction: column;
+        display: none;
+    }
+    .navigation li {
+        border-bottom: 1px var(--color-primary-dark) solid;
+    }
+    .navigation li:last-child {
+        border-bottom: none;
+    }
+    .logo {
+        width: 40px;
+        margin: initial;
+        margin-top: 20px;
+        margin-left: 20px;
+        display: block;
+    }
+    .menuHamburguer {
+        height: 40px;
+        width: 40px;
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 10px;
+        font-size: 2rem;
+    }
+}
 /*****************/
 /***Dark Mode*****/
 /*****************/
