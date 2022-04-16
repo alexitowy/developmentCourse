@@ -166,57 +166,6 @@ body {
     }
 }
 /*****************/
-/***Media QuErY*****/
-/*****************/
-
-@media (max-width: 668px) {
-   .container aside {
-        display: none;
-    }
-    .container main {
-        width: 100%;
-    }
-    .content-input {
-        width: 100%;
-        margin: 10px auto;
-        flex-direction: column;
-    }
-    .content-input input {
-        width: 100%;
-    }
-    .content-input button {
-        padding: 0px;
-        margin: 0px;
-        margin-top: 10px;
-    }
-    .navigation {
-        flex-direction: column;
-        display: none;
-    }
-    .navigation li {
-        border-bottom: 1px var(--color-primary-dark) solid;
-    }
-    .navigation li:last-child {
-        border-bottom: none;
-    }
-    .logo {
-        width: 40px;
-        margin: initial;
-        margin-top: 20px;
-        margin-left: 20px;
-        display: block;
-    }
-    .menuHamburguer {
-        height: 40px;
-        width: 40px;
-        display: block;
-        position: absolute;
-        top: 20px;
-        right: 10px;
-        font-size: 2rem;
-    }
-}
-/*****************/
 /***Dark Mode*****/
 /*****************/
 .dark {
@@ -259,4 +208,133 @@ body {
 .dark .content-input button {
     color: white;
     font-weight: 700;
+}
+/*****************/
+/***Media QuErY*****/
+/*****************/
+
+@media (max-width: 688px) {
+   .container aside {
+        display: none;
+    }
+    .container main {
+        width: 100%;
+    }
+    .content-input {
+        width: 100%;
+        margin: 10px auto;
+        flex-direction: column;
+    }
+    .content-input input {
+        width: 100%;
+    }
+    .content-input button {
+        padding: 0px;
+        margin: 0px;
+        margin-top: 10px;
+    }
+    .navigation {
+        flex-direction: column;
+        display: none;
+    }
+    .navigation li {
+        border-bottom: 1px var(--color-primary-dark) solid;
+    }
+    .navigation li:last-child {
+        border-bottom: none;
+    }
+    .logo {
+        width: 40px;
+        margin: initial;
+        margin-top: 15px;
+        margin-left: 20px;
+        display: block;
+        margin-bottom: 10px;
+    }
+    .menuHamburguer {
+        height: 40px;
+        width: 40px;
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 10px;
+        font-size: 2rem;
+    }
+    .container-task ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+    }
+    .container-task ul li {
+        width: 45%;
+        height: 150px;
+        border: 1px solid var(--color-primary-dark);
+        margin:15px 0px;
+        border-radius: 8px;
+        align-items: center;
+        justify-content: center;
+        display: inline-flex;
+        background-color: rgb(183, 54, 183);
+    }
+
+    .container-task ul li:nth-child(5n+1) {
+        background-color: rgb(207, 60, 60);
+    }
+    .container-task ul li:nth-child(3n+4) {
+        background-color: rgb(64, 64, 184);
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* .container-task ul {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .container-task ul li{
+        width: 50%;
+        height: 200px;
+        border-bottom: none;
+    } */
+
+    /* .container-task ul li div{
+        border: solid  1px var(--color-primary-dark);
+        height: 100%;
+        border-radius: 6px;
+        vertical-align: middle;
+        text-align: center;
+        display: inline-flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 1px 3px 14px -5px  var(--color-primary);
+        background-color: purple;
+    }
+    .container-task ul li:nth-child(2n+4) div{
+        background-color: red;
+    }
+    .container-task ul li:nth-child(4n+1) div{
+        background-color: blue;
+    }    
+    
+    .dark .container-task ul li{
+        width: 50%;
+        height: 150px;
+        border-bottom: none;
+    } */
 }
