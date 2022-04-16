@@ -3,12 +3,18 @@
 
 <head>
     <title>Ejercicio 1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="css/style.css" />
+
 </head>
 
 <body class="dark">
     <header class="header">
-        <img class="logo" src="assets/img/logo.png" alt="">
+        <img class="logo animate__animated animate__fadeIn animate__delay-1s" src="assets/img/logo.png" alt="">
+        <span class="menuHamburguer">
+            <i class="bi bi-list"></i>
+        </span>
         <ul class="navigation hover-efect">
             <li><a href="index.html">Menu 1</a></li>
             <li><a href="index.html">Menu 2</a></li>
@@ -19,25 +25,33 @@
     <div class="container">
         <aside>
             <ul class="aside hover-efect">
-                <li><img src="assets/img/logo.png" alt=""><a href="">Menu 1</a></li>
-                <li><img src="assets/img/logo.png" alt=""><a href="">Menu 2</a></li>
-                <li><img src="assets/img/logo.png" alt=""><a href="">Menu 3</a></li>
-                <li><img src="assets/img/logo.png" alt=""><a href="">Menu 4</a></li>
-                <li><img src="assets/img/logo.png" alt=""><a href="">Menu 5</a></li>
+                <li><i class="bi bi-person-circle"></i><a href="">Cuenta</a></li>
+                <li><i class="bi bi-gear-fill"></i><a href="">Configuración</a></li>
+                <li><i class="bi bi-lock-fill"></i><a href="">Seguridad</a></li>
+                <li><i class="bi bi-exclamation-diamond-fill"></i><a href="">Notificaciones</a></li>
+                <li><i class="bi bi-question-circle-fill"></i><a href="">Preguntas</a></li>
             </ul>
         </aside>
         <main>
-            <section class="content-input"><input type="text"><button>Añadir</button></section>
+            <section class="content-input"><input type="text" /><button class="animate__animated animate__heartBeat"><i
+                        class="bi bi-plus"></i></button></section>
             <div class="container-task">
                 <h3 class="title">Tareas</h3>
                 <ul class="hover-efect">
-                    <li>Levantarse</li>
-                    <li>Tender la cama</li>
-                    <li>Lavarse la cara</li>
-                    <li>Prepararse el desayuno</li>
-                    <li>Lavarse los dientes</li>
-                    <li>Vestirse</li>
-                    <li>Salir al trabajo</li>
+                    <li>Levantarse
+                    </li>
+                    <li>Tender la cama
+                    </li>
+                    <li>Lavarse la cara
+                    </li>
+                    <li>Prepararse el desayuno
+                    </li>
+                    <li>Lavarse los dientes
+                    </li>
+                    <li>Vestirse
+                    </li>
+                    <li>Salir al trabajo
+                    </li>
                 </ul>
             </div>
         </main>
